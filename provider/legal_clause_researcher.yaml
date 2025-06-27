@@ -2,9 +2,9 @@ identity:
   author: "pragnyan_ramtha"
   name: "legal_clause_researcher"
   label:
-    en_US: "legal_clause_researcher"
-    zh_Hans: "legal_clause_researcher"
-    pt_BR: "legal_clause_researcher"
+    en_US: legal clause researcher
+    zh_Hans: 法律条款研究者法律条款研究者
+    pt_BR: pesquisador de cláusulas legais
   description:
     en_US: "This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions."
     zh_Hans: "This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions."
