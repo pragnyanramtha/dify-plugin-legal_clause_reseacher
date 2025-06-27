@@ -1,0 +1,52 @@
+version: 0.0.1
+type: plugin
+author: pragnyan_ramtha
+name: legal_clause_researcher
+label:
+  en_US: legal_clause_researcher
+  ja_JP: legal_clause_researcher
+  zh_Hans: legal_clause_researcher
+  pt_BR: legal_clause_researcher
+description:
+  en_US: This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions.
+  ja_JP: This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions.
+  zh_Hans: This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions.
+  pt_BR: This plugin identifies the presence of predefined legal keywords or phrases within a provided text and provides their meaning according the latest revisions.
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: true
+      rerank: true
+      tts: true
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/legal_clause_researcher.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-06-26T17:16:24.589199083Z
+privacy: PRIVACY.md
+repo: 'https://github.com/pragnyanramtha/dify-plugin-legal_clause_reseacher '
+verified: false
