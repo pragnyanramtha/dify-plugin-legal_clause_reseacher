@@ -20,7 +20,7 @@ credentials_for_provider:
       en_US: Enter your Legal Clause Researcher API key here
     help:
       en_US: Get your Legal Clause Researcher API key from legalclause.com
-    url: https://legalclause.com/
+    url: https://developers.thomsonreuters.com/pages/api-catalog
 tools:
   - tools/legal_clause_researcher.yaml
 extra:
